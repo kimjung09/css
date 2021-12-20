@@ -1,0 +1,358 @@
+/* Container */
+.SubPage {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.SubPage::after {
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 1080px;
+    background-image: url("/src/components/images/background3.jpg");
+    background-size: cover;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.SubBody-Container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+
+.SubBody-Container .pagination {
+    width: 100%;
+    padding: 40px;
+    display: block;
+    text-align: center;
+}
+
+.SubBody-Container .pagination span {
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.SubBody-Container .pagination span img {
+    vertical-align: middle;
+}
+
+.SubBody-Container .Container {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 50px 70px;
+    position: relative;
+    display:grid;
+    grid-template-columns: 41% 1fr;
+    column-gap: 4.5%;
+    margin-top: 90px;
+}
+
+.SubBody-Container .Container .left-btn {
+    position: absolute;
+    top: 50%;
+    left: -72px;
+    transform: translate(0, -50%);
+}
+
+.SubBody-Container .Container .left-btn > button {
+    background-color: transparent;
+    border: 0;
+}
+
+.SubBody-Container .Container .right-btn {
+    position: absolute;
+    top: 50%;
+    right: -72px;
+    transform: translate(0, -50%);
+}
+
+.SubBody-Container .Container .right-btn > button {
+    background-color: transparent;
+    border: 0;
+}
+
+.SubBody-Container .Container .Image {
+    width: 100%;
+}
+
+.SubBody-Container .Container .Image img {
+    width: 100%;
+}
+
+.Container .Description {
+    width: 100%;
+}
+
+.Container .Description > h2 {
+    font-size:30px;
+    margin-bottom: 35px;
+    color:#000000;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.Container .Description .subTitle {
+    color:#a9a9a9;
+    text-align: left;
+    font-size:16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.Container .Description .subTitle .subtitle-bottom {
+    font-size:14px;
+    font-weight: 500;
+}
+
+.Container .Description .ButtonContainer {
+    font-size:20px;
+    font-weight: bold;
+    color:#fff;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 33%;
+    column-gap: 2%;
+}
+
+.Description .ButtonContainer .input input {
+    width: 100%;
+    height: 55px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    opacity: 0.6;
+    border: 2px solid #000000;
+    background: #ffffff;
+}
+
+.Description .ButtonContainer .btn button {
+    width: 100%;
+    height: 55px;
+    background: #db154a;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.Description .ButtonContainer .btn button:hover {
+    background: #ffffff;
+    border: 2px solid #db154a;
+    color: #db154a;
+}
+
+.Description .ButtonContainer .btn .disabled-btn {
+    background: #bababa;
+}
+.Description .ButtonContainer .btn .disabled-btn:hover {
+    background: #bababa;
+    color: #ffffff;
+    border: 0;
+}
+
+/* table 컨텐츠 */
+
+.Container .Description .bid-table-container {
+    width: 100%;
+    margin-top: 35px;
+    max-height: 220px;
+    overflow-y: scroll;
+}
+
+.Container .Description .bid-table-container::-webkit-scrollbar {
+    width: 8px;
+}
+.Container .Description .bid-table-container::-webkit-scrollbar-thumb {
+    background-color: #a8b0c4;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.Container .Description .bid-table-container::-webkit-scrollbar-track {
+    background-color: #efefef;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+
+.Container .Description .bid-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0;
+    overflow-scrolling: touch;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.Container .Description .bid-table thead tr th {
+    position: sticky;
+    top: 0;
+    background: #efefef;
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 1px solid #e3e3e3;
+    padding: 4px 0;
+}
+
+.Container .Description .bid-table tbody tr td {
+    width:500px;
+    font-size:15px;
+    line-height: 32px;
+    font-weight: normal;
+    text-transform: capitalize;
+    border-top: 1px solid #e3e3e3;
+    text-align: center;
+    padding: 3px 0;
+}
+
+.bid-btn-mobile {
+    width: 100%;
+    height:100px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.bid-btn-mobile button {
+    width: 100%;
+    height: 100%;
+    background: #db154a;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.bid-btn-mobile button:hover {
+    background: #ffffff;
+    border: 2px solid #db154a;
+    color: #db154a;
+}
+
+.bid-btn-mobile .disabled-btn-mobile {
+    background: gray;
+    color: #ffffff;
+}
+
+.bid-btn-mobile .disabled-btn-mobile:hover {
+    background: gray;
+    border: 2px solid gray;
+    color: #fff;
+}
+
+/* Media Query LapTop(1440px) */
+@media screen and (max-width: 1440px) {
+}
+
+/* Media Query LapTop(1024px) */
+@media screen and (max-width: 1024px) {
+    .SubBody-Container .Container .left-btn {
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        transform: translate(0, -50%);
+    }
+
+    .SubBody-Container .Container .left-btn > button {
+        background-color: transparent;
+        border: 0;
+    }
+
+    .SubBody-Container .Container .right-btn {
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        transform: translate(0, -50%);
+    }
+
+    .SubBody-Container .Container .right-btn > button {
+        background-color: transparent;
+        border: 0;
+    }
+    .Description .ButtonContainer .btn button{
+        font-size: 12px;
+    }
+}
+
+/** Media Qurey Medium (992px) */
+@media screen and (max-width: 992px) {
+    .SubBody-Container {
+        padding-top: 100px;
+    }
+    .SubBody-Container .Container {
+        padding: 10px;
+    }
+}
+
+/** Media Query Tablet (768px) */
+@media screen and (max-width: 768px) {
+    .SubBody-Container .Container .left-btn {
+        display: none;
+    }
+
+    .SubBody-Container .Container .right-btn {
+        display: none;
+    }
+
+    .SubBody-Container .Container {
+        display:block;
+        padding: 70px 35px 40px 35px;
+        margin-top: 70px;
+    }
+
+    .Container .Description > h2 {
+        font-size:35px;
+        margin: 30px 0 30px 0;
+        text-align: center;
+    }
+
+    .Container .Description .subTitle {
+        display: none;
+    }
+
+    .Container .Description .ButtonContainer {
+        display: none;
+    }
+
+    .bid-btn-mobile button {
+        display: block;
+    }
+
+    .Footer {
+        margin-bottom: 100px;
+    }
+}
+
+/** Media Query Tablet (425px) */
+@media screen and (max-width: 425px) {
+}
+
+/** Media Query iPoneX (375 x 812) */
+@media screen and (max-width: 375px) {
+}
+
+/** Media Query Galxy Fold(280 x 653) */
+@media screen and (max-width: 280px){
+    .SubBody-Container {
+        padding-top: 70px;
+    }
+
+    .SubBody-Container .Container {
+        display:block;
+        padding: 70px 35px 40px 35px;
+        margin-top: 40px;
+    }
+}
